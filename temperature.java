@@ -2,8 +2,8 @@
 * Temperature converter from Fahrenheit to Celcius
 * Author: Gonzalo Vazquez
 */
-public class Temperature() {
-	private int temp;
+public class Temperature {
+    private int temp;
 
 	//Constructor
 	public Temperature(int val1) {
@@ -11,11 +11,11 @@ public class Temperature() {
 	}
 
 	//Overload Constructor
-	public Constructor () {}
+	public Temperature () {}
 
 	//Setter
 	public void setTemp(int inTemp) {
-		temp = int(inTemp);
+		temp = inTemp;
 	}
 
 	//Getter
@@ -24,9 +24,13 @@ public class Temperature() {
 	}
 
 	//Method to calculate
-	public int calculate() {
-		//Converts C -> F 
+	public int toFarhenheit() {
 		int result = (temp * 9) / 5 + 32;
+		return result;
+	}
+
+	public int toCelcius() {
+		int result = (temp - 32) * 5 / 9;
 		return result;
 	}
 }
