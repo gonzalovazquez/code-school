@@ -9,5 +9,7 @@ function createFibonacci(limit) {
 		num++;
 	}
 
-	console.log(seq);
+	debug(seq);
 }
+
+createFibonacci(10);

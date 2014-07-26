@@ -1,19 +1,9 @@
-class Fibonacci
-	
-	def create(limit)
-		first_number = 0
-		second_number = 1
-		sequence = [0,1]
-		num = 0
+class TestMathFormulas
 
-		while num < limit do
-			next_number = first_number + second_number
-			sequence.push(next_number)
-			first_number = second_number
-			second_number = next_number
-			num = num + 1
-		end
+	require_relative 'mathformulas'
 
-		puts sequence
-	end
+	f = MathFormulas.new()
+
+	f.fibonacci(20)
+
 end
